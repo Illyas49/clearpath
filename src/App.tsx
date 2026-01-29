@@ -71,7 +71,7 @@ function App() {
         {pages[currentPage as keyof typeof pages]}
       </main>
 
-      <footer className="bg-slate-900 text-slate-400 mt-32">
+      <footer className="bg-slate-900 text-slate-400">
         <div className="max-w-6xl mx-auto px-8 py-12">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
