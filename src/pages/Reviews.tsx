@@ -29,7 +29,7 @@ export default function Reviews() {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-slate-900 mb-8">Sample Reviews (Illustrative)</h3>
+          <h3 className="text-2xl font-semibold text-slate-900 mb-8">Active Reviews</h3>
 
           <div className="relative">
             <div className="space-y-6 blur-sm opacity-40 pointer-events-none">
