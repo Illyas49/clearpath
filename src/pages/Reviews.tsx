@@ -1,4 +1,4 @@
-import { FileText, CheckSquare } from 'lucide-react';
+import { FileText, CheckSquare, Lock } from 'lucide-react';
 
 export default function Reviews() {
   return (
@@ -31,45 +31,72 @@ export default function Reviews() {
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-slate-900 mb-8">Sample Reviews (Illustrative)</h3>
 
-          <div className="space-y-6">
-            <div className="bg-white rounded-lg border-2 border-slate-200 overflow-hidden hover:border-slate-300 transition-colors">
-              <div className="bg-slate-50 px-8 py-4 border-b border-slate-200">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-semibold text-slate-900">Review ID: CP-014</span>
-                  <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Published</span>
+          <div className="relative">
+            <div className="space-y-6 blur-sm opacity-40 pointer-events-none">
+              <div className="bg-white rounded-lg border-2 border-slate-200 overflow-hidden">
+                <div className="bg-slate-50 px-8 py-4 border-b border-slate-200">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-semibold text-slate-900">Review ID: CP-014</span>
+                    <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Published</span>
+                  </div>
+                </div>
+                <div className="px-8 py-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <div className="text-sm font-medium text-slate-500 mb-1">Category</div>
+                      <div className="text-base text-slate-900">Digital Services</div>
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-slate-500 mb-1">Focus</div>
+                      <div className="text-base text-slate-900">Onboarding clarity and control visibility</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="px-8 py-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <div className="text-sm font-medium text-slate-500 mb-1">Category</div>
-                    <div className="text-base text-slate-900">Digital Services</div>
+
+              <div className="bg-white rounded-lg border-2 border-slate-200 overflow-hidden">
+                <div className="bg-slate-50 px-8 py-4 border-b border-slate-200">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-semibold text-slate-900">Review ID: CP-015</span>
+                    <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Published</span>
                   </div>
-                  <div>
-                    <div className="text-sm font-medium text-slate-500 mb-1">Focus</div>
-                    <div className="text-base text-slate-900">Onboarding clarity and control visibility</div>
+                </div>
+                <div className="px-8 py-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <div className="text-sm font-medium text-slate-500 mb-1">Category</div>
+                      <div className="text-base text-slate-900">Financial Interfaces</div>
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-slate-500 mb-1">Focus</div>
+                      <div className="text-base text-slate-900">Communication of user-managed settings</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg border-2 border-slate-200 overflow-hidden hover:border-slate-300 transition-colors">
-              <div className="bg-slate-50 px-8 py-4 border-b border-slate-200">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-semibold text-slate-900">Review ID: CP-015</span>
-                  <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Published</span>
-                </div>
-              </div>
-              <div className="px-8 py-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <div className="text-sm font-medium text-slate-500 mb-1">Category</div>
-                    <div className="text-base text-slate-900">Financial Interfaces</div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="bg-white rounded-lg shadow-2xl border border-slate-300 p-10 max-w-md w-full mx-4">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mb-6">
+                    <Lock className="w-8 h-8 text-slate-700" />
                   </div>
-                  <div>
-                    <div className="text-sm font-medium text-slate-500 mb-1">Focus</div>
-                    <div className="text-base text-slate-900">Communication of user-managed settings</div>
+                  <h4 className="text-2xl font-semibold text-slate-900 mb-3">Access Required</h4>
+                  <p className="text-slate-600 leading-relaxed mb-8">
+                    Register or log in to access full review materials and structured evaluations.
+                  </p>
+                  <div className="flex flex-col gap-3 w-full">
+                    <button className="w-full px-6 py-3 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 transition-colors rounded">
+                      Log In
+                    </button>
+                    <button className="w-full px-6 py-3 text-sm font-medium text-slate-900 bg-white hover:bg-slate-50 border border-slate-300 transition-colors rounded">
+                      Create Account
+                    </button>
                   </div>
+                  <p className="text-xs text-slate-500 mt-6">
+                    Public summaries are provided where applicable
+                  </p>
                 </div>
               </div>
             </div>
